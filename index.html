@@ -11,6 +11,28 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+                div.gallery {
+                margin: 5px;
+                border: 1px solid #ccc;
+                float: left;
+                width: 180px;
+                }
+
+                div.gallery:hover {
+                border: 1px solid #777;
+               }
+
+               div.gallery img {
+               width: 100%;
+              height: auto;
+             }
+
+             div.desc {
+              padding: 15px;
+            text-align: center;
+           }
+          </style>
 	</head>
 	<body class="is-preload">
 
@@ -78,6 +100,54 @@
 									<img src="imgHand.png" alt="Georges hand">
 									
 								</section>
+								        <h3> 3D modling in blender </h3>
+								<p>
+									The following section will discuss how I created the final 3D model of the prosthetic hand outlining all steps and mishaps along the way. Overall, 
+									I found working with blender to be quite fun and simple I think I picked it up quickly, this could be due to my past experience with blender.
+									<br>
+									First, I put my hand model that I got scanned into blender and set it to scale. This was very simple I just had to drag and drop the STL file into blender however 
+									it did take a bit of trial and error to get the scale perfect. Scale is not super important though as the scale can always be changed later. 
+								</p>
+								        <img src="handinblender.png" alt="Georges hand">
+								<p>
+									Now that the hand is in blender, I had to add a plane and put it over the finger so I can make the cut. I gave the plane a smaller thickness to make it more suitable for 3D printing. 
+									I did this with a solidify modifier. I then used a Boolean modifier on the hand select difference and select the plane. Once applied, I hid the plane and 
+									I saw a small cut meaning the cut has been made. However, 
+									it is still only one object so, I had to separate them start by selecting the finger in edit mode. Press p and selection then go back into object mode. Now the is finger off.
+									<br>
+									 These steps were incredibly simple just add a plane move it into position add the modifiers and the cut is made. 
+									Without the use of the modifiers I fear this prosess would have been far more complicated and time consuming however, the modifiers it only takes a cuple minutes.
+								</p>
+								
+									<div class="gallery">
+                                                                         <a>
+                                                                        <img src="planeonhand.png" alt="Cinque Terre" width="600" height="400">
+                                                                        </a>
+                                                                          <div class="desc">Add a description of the image here</div>
+                                                                         </div>
+
+                                                                        <div class="gallery">
+                                                                         <a>
+                                                                        <img src="solidmod.png" alt="Forest" width="600" height="400">
+                                                                         </a>
+                                                                           <div class="desc">Add a description of the image here</div>
+                                                                           </div>
+
+<div class="gallery">
+  <a target="_blank" href="img_lights.jpg">
+    <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+								
+
 								<header>
 									<h2>Implomentation</h2>
 								</header>
